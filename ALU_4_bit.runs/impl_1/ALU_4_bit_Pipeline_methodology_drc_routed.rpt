@@ -1,0 +1,444 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Feb 18 12:04:23 2026
+| Host         : SHUBHAM running 64-bit major release  (build 9200)
+| Command      : report_methodology -file ALU_4_bit_Pipeline_methodology_drc_routed.rpt -pb ALU_4_bit_Pipeline_methodology_drc_routed.pb -rpx ALU_4_bit_Pipeline_methodology_drc_routed.rpx
+| Design       : ALU_4_bit_Pipeline
+| Device       : xc7a35tcpg236-1
+| Speed File   : -1
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: checkpoint_ALU_4_bit_Pipeline
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 64
++-----------+----------+------------------------------------------+------------+
+| Rule      | Severity | Description                              | Violations |
++-----------+----------+------------------------------------------+------------+
+| TIMING-18 | Warning  | Missing input or output delay            | 20         |
+| XDCH-2    | Warning  | Same min and max delay values on IO port | 44         |
++-----------+----------+------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on A[0] relative to clock(s) clk
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An input delay is missing on A[1] relative to clock(s) clk
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An input delay is missing on A[2] relative to clock(s) clk
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An input delay is missing on A[3] relative to clock(s) clk
+Related violations: <none>
+
+TIMING-18#5 Warning
+Missing input or output delay  
+An input delay is missing on B[0] relative to clock(s) clk
+Related violations: <none>
+
+TIMING-18#6 Warning
+Missing input or output delay  
+An input delay is missing on B[1] relative to clock(s) clk
+Related violations: <none>
+
+TIMING-18#7 Warning
+Missing input or output delay  
+An input delay is missing on B[2] relative to clock(s) clk
+Related violations: <none>
+
+TIMING-18#8 Warning
+Missing input or output delay  
+An input delay is missing on B[3] relative to clock(s) clk
+Related violations: <none>
+
+TIMING-18#9 Warning
+Missing input or output delay  
+An input delay is missing on sel[0] relative to clock(s) clk
+Related violations: <none>
+
+TIMING-18#10 Warning
+Missing input or output delay  
+An input delay is missing on sel[1] relative to clock(s) clk
+Related violations: <none>
+
+TIMING-18#11 Warning
+Missing input or output delay  
+An input delay is missing on sel[2] relative to clock(s) clk
+Related violations: <none>
+
+TIMING-18#12 Warning
+Missing input or output delay  
+An input delay is missing on sel[3] relative to clock(s) clk
+Related violations: <none>
+
+TIMING-18#13 Warning
+Missing input or output delay  
+An output delay is missing on result[0] relative to clock(s) clk
+Related violations: <none>
+
+TIMING-18#14 Warning
+Missing input or output delay  
+An output delay is missing on result[1] relative to clock(s) clk
+Related violations: <none>
+
+TIMING-18#15 Warning
+Missing input or output delay  
+An output delay is missing on result[2] relative to clock(s) clk
+Related violations: <none>
+
+TIMING-18#16 Warning
+Missing input or output delay  
+An output delay is missing on result[3] relative to clock(s) clk
+Related violations: <none>
+
+TIMING-18#17 Warning
+Missing input or output delay  
+An output delay is missing on result[4] relative to clock(s) clk
+Related violations: <none>
+
+TIMING-18#18 Warning
+Missing input or output delay  
+An output delay is missing on result[5] relative to clock(s) clk
+Related violations: <none>
+
+TIMING-18#19 Warning
+Missing input or output delay  
+An output delay is missing on result[6] relative to clock(s) clk
+Related violations: <none>
+
+TIMING-18#20 Warning
+Missing input or output delay  
+An output delay is missing on result[7] relative to clock(s) clk
+Related violations: <none>
+
+XDCH-2#1 Warning
+Same min and max delay values on IO port  
+The same input delay of 2.000 ns has been defined on port 'A[0]' for both max and min. Make sure this reflects the design intent.
+set_input_delay 2.000 [get_ports {{A[*]} {B[*]} {sel[*]}}]
+D:/RTL_Design/ALU_4_bit/ALU_4_bit.srcs/constrs_2/new/ALU_cs.xdc (Line: 1)
+Related violations: <none>
+
+XDCH-2#2 Warning
+Same min and max delay values on IO port  
+The same input delay of 2.000 ns has been defined on port 'A[0]' relative to clock clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock clk 2.000 [get_ports {{A[*]} {B[*]} {sel[*]} rst}]
+D:/RTL_Design/ALU_4_bit/ALU_4_bit.srcs/constrs_2/new/ALU_PL_cs.xdc (Line: 3)
+Related violations: <none>
+
+XDCH-2#3 Warning
+Same min and max delay values on IO port  
+The same input delay of 2.000 ns has been defined on port 'A[1]' for both max and min. Make sure this reflects the design intent.
+set_input_delay 2.000 [get_ports {{A[*]} {B[*]} {sel[*]}}]
+D:/RTL_Design/ALU_4_bit/ALU_4_bit.srcs/constrs_2/new/ALU_cs.xdc (Line: 1)
+Related violations: <none>
+
+XDCH-2#4 Warning
+Same min and max delay values on IO port  
+The same input delay of 2.000 ns has been defined on port 'A[1]' relative to clock clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock clk 2.000 [get_ports {{A[*]} {B[*]} {sel[*]} rst}]
+D:/RTL_Design/ALU_4_bit/ALU_4_bit.srcs/constrs_2/new/ALU_PL_cs.xdc (Line: 3)
+Related violations: <none>
+
+XDCH-2#5 Warning
+Same min and max delay values on IO port  
+The same input delay of 2.000 ns has been defined on port 'A[2]' for both max and min. Make sure this reflects the design intent.
+set_input_delay 2.000 [get_ports {{A[*]} {B[*]} {sel[*]}}]
+D:/RTL_Design/ALU_4_bit/ALU_4_bit.srcs/constrs_2/new/ALU_cs.xdc (Line: 1)
+Related violations: <none>
+
+XDCH-2#6 Warning
+Same min and max delay values on IO port  
+The same input delay of 2.000 ns has been defined on port 'A[2]' relative to clock clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock clk 2.000 [get_ports {{A[*]} {B[*]} {sel[*]} rst}]
+D:/RTL_Design/ALU_4_bit/ALU_4_bit.srcs/constrs_2/new/ALU_PL_cs.xdc (Line: 3)
+Related violations: <none>
+
+XDCH-2#7 Warning
+Same min and max delay values on IO port  
+The same input delay of 2.000 ns has been defined on port 'A[3]' for both max and min. Make sure this reflects the design intent.
+set_input_delay 2.000 [get_ports {{A[*]} {B[*]} {sel[*]}}]
+D:/RTL_Design/ALU_4_bit/ALU_4_bit.srcs/constrs_2/new/ALU_cs.xdc (Line: 1)
+Related violations: <none>
+
+XDCH-2#8 Warning
+Same min and max delay values on IO port  
+The same input delay of 2.000 ns has been defined on port 'A[3]' relative to clock clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock clk 2.000 [get_ports {{A[*]} {B[*]} {sel[*]} rst}]
+D:/RTL_Design/ALU_4_bit/ALU_4_bit.srcs/constrs_2/new/ALU_PL_cs.xdc (Line: 3)
+Related violations: <none>
+
+XDCH-2#9 Warning
+Same min and max delay values on IO port  
+The same input delay of 2.000 ns has been defined on port 'B[0]' for both max and min. Make sure this reflects the design intent.
+set_input_delay 2.000 [get_ports {{A[*]} {B[*]} {sel[*]}}]
+D:/RTL_Design/ALU_4_bit/ALU_4_bit.srcs/constrs_2/new/ALU_cs.xdc (Line: 1)
+Related violations: <none>
+
+XDCH-2#10 Warning
+Same min and max delay values on IO port  
+The same input delay of 2.000 ns has been defined on port 'B[0]' relative to clock clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock clk 2.000 [get_ports {{A[*]} {B[*]} {sel[*]} rst}]
+D:/RTL_Design/ALU_4_bit/ALU_4_bit.srcs/constrs_2/new/ALU_PL_cs.xdc (Line: 3)
+Related violations: <none>
+
+XDCH-2#11 Warning
+Same min and max delay values on IO port  
+The same input delay of 2.000 ns has been defined on port 'B[1]' for both max and min. Make sure this reflects the design intent.
+set_input_delay 2.000 [get_ports {{A[*]} {B[*]} {sel[*]}}]
+D:/RTL_Design/ALU_4_bit/ALU_4_bit.srcs/constrs_2/new/ALU_cs.xdc (Line: 1)
+Related violations: <none>
+
+XDCH-2#12 Warning
+Same min and max delay values on IO port  
+The same input delay of 2.000 ns has been defined on port 'B[1]' relative to clock clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock clk 2.000 [get_ports {{A[*]} {B[*]} {sel[*]} rst}]
+D:/RTL_Design/ALU_4_bit/ALU_4_bit.srcs/constrs_2/new/ALU_PL_cs.xdc (Line: 3)
+Related violations: <none>
+
+XDCH-2#13 Warning
+Same min and max delay values on IO port  
+The same input delay of 2.000 ns has been defined on port 'B[2]' for both max and min. Make sure this reflects the design intent.
+set_input_delay 2.000 [get_ports {{A[*]} {B[*]} {sel[*]}}]
+D:/RTL_Design/ALU_4_bit/ALU_4_bit.srcs/constrs_2/new/ALU_cs.xdc (Line: 1)
+Related violations: <none>
+
+XDCH-2#14 Warning
+Same min and max delay values on IO port  
+The same input delay of 2.000 ns has been defined on port 'B[2]' relative to clock clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock clk 2.000 [get_ports {{A[*]} {B[*]} {sel[*]} rst}]
+D:/RTL_Design/ALU_4_bit/ALU_4_bit.srcs/constrs_2/new/ALU_PL_cs.xdc (Line: 3)
+Related violations: <none>
+
+XDCH-2#15 Warning
+Same min and max delay values on IO port  
+The same input delay of 2.000 ns has been defined on port 'B[3]' for both max and min. Make sure this reflects the design intent.
+set_input_delay 2.000 [get_ports {{A[*]} {B[*]} {sel[*]}}]
+D:/RTL_Design/ALU_4_bit/ALU_4_bit.srcs/constrs_2/new/ALU_cs.xdc (Line: 1)
+Related violations: <none>
+
+XDCH-2#16 Warning
+Same min and max delay values on IO port  
+The same input delay of 2.000 ns has been defined on port 'B[3]' relative to clock clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock clk 2.000 [get_ports {{A[*]} {B[*]} {sel[*]} rst}]
+D:/RTL_Design/ALU_4_bit/ALU_4_bit.srcs/constrs_2/new/ALU_PL_cs.xdc (Line: 3)
+Related violations: <none>
+
+XDCH-2#17 Warning
+Same min and max delay values on IO port  
+The same input delay of 2.000 ns has been defined on port 'rst' relative to clock clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock clk 2.000 [get_ports {{A[*]} {B[*]} {sel[*]} rst}]
+D:/RTL_Design/ALU_4_bit/ALU_4_bit.srcs/constrs_2/new/ALU_PL_cs.xdc (Line: 3)
+Related violations: <none>
+
+XDCH-2#18 Warning
+Same min and max delay values on IO port  
+The same input delay of 2.000 ns has been defined on port 'sel[0]' for both max and min. Make sure this reflects the design intent.
+set_input_delay 2.000 [get_ports {{A[*]} {B[*]} {sel[*]}}]
+D:/RTL_Design/ALU_4_bit/ALU_4_bit.srcs/constrs_2/new/ALU_cs.xdc (Line: 1)
+Related violations: <none>
+
+XDCH-2#19 Warning
+Same min and max delay values on IO port  
+The same input delay of 2.000 ns has been defined on port 'sel[0]' relative to clock clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock clk 2.000 [get_ports {{A[*]} {B[*]} {sel[*]} rst}]
+D:/RTL_Design/ALU_4_bit/ALU_4_bit.srcs/constrs_2/new/ALU_PL_cs.xdc (Line: 3)
+Related violations: <none>
+
+XDCH-2#20 Warning
+Same min and max delay values on IO port  
+The same input delay of 2.000 ns has been defined on port 'sel[1]' for both max and min. Make sure this reflects the design intent.
+set_input_delay 2.000 [get_ports {{A[*]} {B[*]} {sel[*]}}]
+D:/RTL_Design/ALU_4_bit/ALU_4_bit.srcs/constrs_2/new/ALU_cs.xdc (Line: 1)
+Related violations: <none>
+
+XDCH-2#21 Warning
+Same min and max delay values on IO port  
+The same input delay of 2.000 ns has been defined on port 'sel[1]' relative to clock clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock clk 2.000 [get_ports {{A[*]} {B[*]} {sel[*]} rst}]
+D:/RTL_Design/ALU_4_bit/ALU_4_bit.srcs/constrs_2/new/ALU_PL_cs.xdc (Line: 3)
+Related violations: <none>
+
+XDCH-2#22 Warning
+Same min and max delay values on IO port  
+The same input delay of 2.000 ns has been defined on port 'sel[2]' for both max and min. Make sure this reflects the design intent.
+set_input_delay 2.000 [get_ports {{A[*]} {B[*]} {sel[*]}}]
+D:/RTL_Design/ALU_4_bit/ALU_4_bit.srcs/constrs_2/new/ALU_cs.xdc (Line: 1)
+Related violations: <none>
+
+XDCH-2#23 Warning
+Same min and max delay values on IO port  
+The same input delay of 2.000 ns has been defined on port 'sel[2]' relative to clock clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock clk 2.000 [get_ports {{A[*]} {B[*]} {sel[*]} rst}]
+D:/RTL_Design/ALU_4_bit/ALU_4_bit.srcs/constrs_2/new/ALU_PL_cs.xdc (Line: 3)
+Related violations: <none>
+
+XDCH-2#24 Warning
+Same min and max delay values on IO port  
+The same input delay of 2.000 ns has been defined on port 'sel[3]' for both max and min. Make sure this reflects the design intent.
+set_input_delay 2.000 [get_ports {{A[*]} {B[*]} {sel[*]}}]
+D:/RTL_Design/ALU_4_bit/ALU_4_bit.srcs/constrs_2/new/ALU_cs.xdc (Line: 1)
+Related violations: <none>
+
+XDCH-2#25 Warning
+Same min and max delay values on IO port  
+The same input delay of 2.000 ns has been defined on port 'sel[3]' relative to clock clk for both max and min. Make sure this reflects the design intent.
+set_input_delay -clock clk 2.000 [get_ports {{A[*]} {B[*]} {sel[*]} rst}]
+D:/RTL_Design/ALU_4_bit/ALU_4_bit.srcs/constrs_2/new/ALU_PL_cs.xdc (Line: 3)
+Related violations: <none>
+
+XDCH-2#26 Warning
+Same min and max delay values on IO port  
+The same output delay of 2.000 ns has been defined on port 'div_by_zero_flag' relative to clock clk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock clk 2.000 [get_ports {{result[*]} zero_flag overflow_flag div_by_zero_flag}]
+D:/RTL_Design/ALU_4_bit/ALU_4_bit.srcs/constrs_2/new/ALU_PL_cs.xdc (Line: 5)
+Related violations: <none>
+
+XDCH-2#27 Warning
+Same min and max delay values on IO port  
+The same output delay of 2.000 ns has been defined on port 'overflow_flag' relative to clock clk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock clk 2.000 [get_ports {{result[*]} zero_flag overflow_flag div_by_zero_flag}]
+D:/RTL_Design/ALU_4_bit/ALU_4_bit.srcs/constrs_2/new/ALU_PL_cs.xdc (Line: 5)
+Related violations: <none>
+
+XDCH-2#28 Warning
+Same min and max delay values on IO port  
+The same output delay of 2.000 ns has been defined on port 'result[0]' for both max and min. Make sure this reflects the design intent.
+set_output_delay 2.000 [get_ports {result[*]}]
+D:/RTL_Design/ALU_4_bit/ALU_4_bit.srcs/constrs_2/new/ALU_cs.xdc (Line: 3)
+Related violations: <none>
+
+XDCH-2#29 Warning
+Same min and max delay values on IO port  
+The same output delay of 2.000 ns has been defined on port 'result[0]' relative to clock clk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock clk 2.000 [get_ports {{result[*]} zero_flag overflow_flag div_by_zero_flag}]
+D:/RTL_Design/ALU_4_bit/ALU_4_bit.srcs/constrs_2/new/ALU_PL_cs.xdc (Line: 5)
+Related violations: <none>
+
+XDCH-2#30 Warning
+Same min and max delay values on IO port  
+The same output delay of 2.000 ns has been defined on port 'result[1]' for both max and min. Make sure this reflects the design intent.
+set_output_delay 2.000 [get_ports {result[*]}]
+D:/RTL_Design/ALU_4_bit/ALU_4_bit.srcs/constrs_2/new/ALU_cs.xdc (Line: 3)
+Related violations: <none>
+
+XDCH-2#31 Warning
+Same min and max delay values on IO port  
+The same output delay of 2.000 ns has been defined on port 'result[1]' relative to clock clk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock clk 2.000 [get_ports {{result[*]} zero_flag overflow_flag div_by_zero_flag}]
+D:/RTL_Design/ALU_4_bit/ALU_4_bit.srcs/constrs_2/new/ALU_PL_cs.xdc (Line: 5)
+Related violations: <none>
+
+XDCH-2#32 Warning
+Same min and max delay values on IO port  
+The same output delay of 2.000 ns has been defined on port 'result[2]' for both max and min. Make sure this reflects the design intent.
+set_output_delay 2.000 [get_ports {result[*]}]
+D:/RTL_Design/ALU_4_bit/ALU_4_bit.srcs/constrs_2/new/ALU_cs.xdc (Line: 3)
+Related violations: <none>
+
+XDCH-2#33 Warning
+Same min and max delay values on IO port  
+The same output delay of 2.000 ns has been defined on port 'result[2]' relative to clock clk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock clk 2.000 [get_ports {{result[*]} zero_flag overflow_flag div_by_zero_flag}]
+D:/RTL_Design/ALU_4_bit/ALU_4_bit.srcs/constrs_2/new/ALU_PL_cs.xdc (Line: 5)
+Related violations: <none>
+
+XDCH-2#34 Warning
+Same min and max delay values on IO port  
+The same output delay of 2.000 ns has been defined on port 'result[3]' for both max and min. Make sure this reflects the design intent.
+set_output_delay 2.000 [get_ports {result[*]}]
+D:/RTL_Design/ALU_4_bit/ALU_4_bit.srcs/constrs_2/new/ALU_cs.xdc (Line: 3)
+Related violations: <none>
+
+XDCH-2#35 Warning
+Same min and max delay values on IO port  
+The same output delay of 2.000 ns has been defined on port 'result[3]' relative to clock clk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock clk 2.000 [get_ports {{result[*]} zero_flag overflow_flag div_by_zero_flag}]
+D:/RTL_Design/ALU_4_bit/ALU_4_bit.srcs/constrs_2/new/ALU_PL_cs.xdc (Line: 5)
+Related violations: <none>
+
+XDCH-2#36 Warning
+Same min and max delay values on IO port  
+The same output delay of 2.000 ns has been defined on port 'result[4]' for both max and min. Make sure this reflects the design intent.
+set_output_delay 2.000 [get_ports {result[*]}]
+D:/RTL_Design/ALU_4_bit/ALU_4_bit.srcs/constrs_2/new/ALU_cs.xdc (Line: 3)
+Related violations: <none>
+
+XDCH-2#37 Warning
+Same min and max delay values on IO port  
+The same output delay of 2.000 ns has been defined on port 'result[4]' relative to clock clk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock clk 2.000 [get_ports {{result[*]} zero_flag overflow_flag div_by_zero_flag}]
+D:/RTL_Design/ALU_4_bit/ALU_4_bit.srcs/constrs_2/new/ALU_PL_cs.xdc (Line: 5)
+Related violations: <none>
+
+XDCH-2#38 Warning
+Same min and max delay values on IO port  
+The same output delay of 2.000 ns has been defined on port 'result[5]' for both max and min. Make sure this reflects the design intent.
+set_output_delay 2.000 [get_ports {result[*]}]
+D:/RTL_Design/ALU_4_bit/ALU_4_bit.srcs/constrs_2/new/ALU_cs.xdc (Line: 3)
+Related violations: <none>
+
+XDCH-2#39 Warning
+Same min and max delay values on IO port  
+The same output delay of 2.000 ns has been defined on port 'result[5]' relative to clock clk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock clk 2.000 [get_ports {{result[*]} zero_flag overflow_flag div_by_zero_flag}]
+D:/RTL_Design/ALU_4_bit/ALU_4_bit.srcs/constrs_2/new/ALU_PL_cs.xdc (Line: 5)
+Related violations: <none>
+
+XDCH-2#40 Warning
+Same min and max delay values on IO port  
+The same output delay of 2.000 ns has been defined on port 'result[6]' for both max and min. Make sure this reflects the design intent.
+set_output_delay 2.000 [get_ports {result[*]}]
+D:/RTL_Design/ALU_4_bit/ALU_4_bit.srcs/constrs_2/new/ALU_cs.xdc (Line: 3)
+Related violations: <none>
+
+XDCH-2#41 Warning
+Same min and max delay values on IO port  
+The same output delay of 2.000 ns has been defined on port 'result[6]' relative to clock clk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock clk 2.000 [get_ports {{result[*]} zero_flag overflow_flag div_by_zero_flag}]
+D:/RTL_Design/ALU_4_bit/ALU_4_bit.srcs/constrs_2/new/ALU_PL_cs.xdc (Line: 5)
+Related violations: <none>
+
+XDCH-2#42 Warning
+Same min and max delay values on IO port  
+The same output delay of 2.000 ns has been defined on port 'result[7]' for both max and min. Make sure this reflects the design intent.
+set_output_delay 2.000 [get_ports {result[*]}]
+D:/RTL_Design/ALU_4_bit/ALU_4_bit.srcs/constrs_2/new/ALU_cs.xdc (Line: 3)
+Related violations: <none>
+
+XDCH-2#43 Warning
+Same min and max delay values on IO port  
+The same output delay of 2.000 ns has been defined on port 'result[7]' relative to clock clk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock clk 2.000 [get_ports {{result[*]} zero_flag overflow_flag div_by_zero_flag}]
+D:/RTL_Design/ALU_4_bit/ALU_4_bit.srcs/constrs_2/new/ALU_PL_cs.xdc (Line: 5)
+Related violations: <none>
+
+XDCH-2#44 Warning
+Same min and max delay values on IO port  
+The same output delay of 2.000 ns has been defined on port 'zero_flag' relative to clock clk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock clk 2.000 [get_ports {{result[*]} zero_flag overflow_flag div_by_zero_flag}]
+D:/RTL_Design/ALU_4_bit/ALU_4_bit.srcs/constrs_2/new/ALU_PL_cs.xdc (Line: 5)
+Related violations: <none>
+
+

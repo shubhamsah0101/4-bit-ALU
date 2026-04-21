@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/RTL_Design/ALU_4_bit/ALU_4_bit.srcs/sources_1/new/ALU_4_bit_Pipeline.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_4_bit_Pipeline
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/RTL_Design/ALU_4_bit/ALU_4_bit.srcs/sim_1/new/ALU_Pipeline_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_Pipeline_tb

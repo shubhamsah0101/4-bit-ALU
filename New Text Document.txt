@@ -1,0 +1,3 @@
+ALU without Pipeline:
+Total Simulation Time = 1,000 ns
+
